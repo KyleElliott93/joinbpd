@@ -30,7 +30,6 @@ function Home() {
                     textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
                     lineHeight: '1.6'
                 }}>
-                    Join one of the fastest-growing police departments in Central Texas.
                     Make a difference in the Buda community.
                 </p>
                 <div style={{display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center'}}>
