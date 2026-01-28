@@ -6,7 +6,7 @@ import Apply from './pages/Apply'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/joinbpd">
             <div style={{
                 background: 'radial-gradient(ellipse at center, #1e3a8a 20%, #0a1128 100%)',
                 minHeight: '100vh',
