@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="950d3908-6ab5-49e8-a5c3-72610c72cf77" name="Changes" comment="Removed ALL open source software that was concern from IT manager to include Node.js, npm, vite etc.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/apply.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/apply.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/benefits.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/benefits.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/salary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/salary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="950d3908-6ab5-49e8-a5c3-72610c72cf77" name="Changes" comment="created a requirements page with a row calculator" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769787445191</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created a requirements page with a row calculator">
+      <option name="closed" value="true" />
+      <created>1769791982715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769791982715</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created a requirements page with a row calculator">
+      <option name="closed" value="true" />
+      <created>1769792185503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769792185503</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project setup." />
     <MESSAGE value="Removed ALL open source software that was concern from IT manager to include Node.js, npm, vite etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed ALL open source software that was concern from IT manager to include Node.js, npm, vite etc." />
+    <MESSAGE value="created a requirements page with a row calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a requirements page with a row calculator" />
   </component>
 </project>
