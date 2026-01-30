@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements - Buda Police Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-logo">BPD</div>
+                <span class="navbar-title">Buda Police Department</span>
+            </a>
+            
+            <div class="navbar-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="requirements.html" class="nav-link">Requirements</a>
+                <a href="salary.html" class="nav-link">Salary</a>
+                <a href="benefits.html" class="nav-link">Benefits</a>
+                <a href="apply.html" class="apply-btn">APPLY NOW</a>
+            </div>
+        </nav>
+
+        <!-- Requirements Content -->
+        <div class="requirements-content">
+            <h1 class="page-title">Hiring Process Requirements</h1>
+            <p class="page-description">Follow these steps to join the Buda Police Department</p>
+
+            <!-- Step 1 -->
+            <div class="process-step" onclick="toggleStep(1)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">1</span>
+                        <h2 class="step-title">Minimum Requirements</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-1">▼</span>
+                </div>
+                <div class="step-content" id="content-1">
+                    <p>Ensure you meet all requirements above before submitting the registration application.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step" onclick="toggleStep(2)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">2</span>
+                        <h2 class="step-title">Application / Personal History Statement</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-2">▼</span>
+                </div>
+                <div class="step-content" id="content-2">
+                    <p>The process involves first completing an online employment application, which includes the Personal Background History Statement. Review and read <strong>ALL</strong> instructions before starting to complete the application/statement. When this process is complete, you will be provided with a confirmation email. Until you receive this email, the process is not complete. Qualified applicants will be selected to move on to the next phase which is a formal interview.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step" onclick="toggleStep(3)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">3</span>
+                        <h2 class="step-title">Oral Interview Board</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-3">▼</span>
+                </div>
+                <div class="step-content" id="content-3">
+                    <p>The interview panel is composed of 5 or more individuals from various assignments around the department including the Chief or his representative and Human Resources. The candidate will respond verbally to questions asked by the members of the panel which are designed to allow the panel to determine the communication skills, qualifications, and character of the candidate. Questions asked during the interview will range from situational-based topics to questions arising from the background packet.</p>
+                </div>
+            </div>
+
+            <!-- Step 4 - Physical Readiness with Calculator -->
+            <div class="process-step" onclick="toggleStep(4)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">4</span>
+                        <h2 class="step-title">Physical Readiness Assessment</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-4">▼</span>
+                </div>
+                <div class="step-content" id="content-4">
+                    <p>The duties of law enforcement officers require a high level of physical fitness and readiness to meet the demands of the job. The City of Buda PD has adopted one of the methods used by the Texas Department of Public Safety (DPS) to assess officer and candidate fitness and readiness. To perform this assessment, we use Concept 2 Rowers.</p>
+                    
+                    <p>Candidates must complete a 2000-meter row during this phase. This activity measures the candidate's VO2max, which is used to determine the ability of the candidate to meet this fitness requirement. During the assessment, the candidate will be required to row 2000 meters at maximum effort of at least <strong>60 percent</strong> based on the candidate's gender, weight and age.</p>
+                    
+                    <p>At the conclusion of the test, candidates will be ranked from highest to lowest based on their performance. Candidates are encouraged to put forth their best efforts and are advised that this portion of the process is highly competitive. The DPS has validated the percentile at which we assess both officers and candidates.</p>
+                    
+                    <p><strong>Note:</strong> The row machine tension damper (or level of resistance) will be set at a five (5).</p>
+
+                    <!-- Embedded Calculator -->
+                    <div class="calculator-embed">
+                        <div class="calculator-container">
+                            <h3 class="calculator-title">Concept2 Rowing Calculator</h3>
+                            <p class="calculator-subtitle">Calculate Your Required Time</p>
+
+                            <div class="info-box">
+                                <p>Use this calculator to determine what time you need to achieve a 60% passing score on the 2000 meter row test based on your gender, age, and body weight.</p>
+                            </div>
+
+                            <div class="section-header">Enter Your Information</div>
+
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select id="gender">
+                                    <option value="">-- Select Gender --</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ageRange">Age Range:</label>
+                                <select id="ageRange">
+                                    <option value="">-- Select Age Range --</option>
+                                    <option value="20-29">20-29</option>
+                                    <option value="30-39">30-39</option>
+                                    <option value="40-49">40-49</option>
+                                    <option value="50-59">50-59</option>
+                                    <option value="60+">60+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="weight">Weight (lbs):</label>
+                                <select id="weight">
+                                    <option value="">-- Select Weight --</option>
+                                </select>
+                            </div>
+
+                            <button class="calc-button" onclick="calculateTime()">Calculate Required Time</button>
+
+                            <div id="results" class="results">
+                                <div class="result-label">
+                                    Minimum time required for 60th percentile:
+                                </div>
+                                <div class="result-value" id="requiredTime">--:--</div>
+                                <div class="result-label" style="margin-top: 0.5rem;">
+                                    or less to complete the 2000 meter row.
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="section-header">Advanced: Calculate Custom Percentage</div>
+                            <p style="color: #4b5563; margin-bottom: 1.5rem; line-height: 1.6;">
+                                Want to aim higher than 60%? Use this to calculate the time needed for any percentile.
+                            </p>
+
+                            <div class="form-group">
+                                <label for="customPercent">Target Percentile (1-100):</label>
+                                <select id="customPercent">
+                                    <option value="">-- Select Percentage --</option>
+                                </select>
+                            </div>
+
+                            <button class="calc-button" onclick="calculateCustom()">Calculate Custom Percentage</button>
+
+                            <div id="customResults" class="results">
+                                <div class="result-label">
+                                    Time required for <span id="selectedPercent">--</span>th percentile:
+                                </div>
+                                <div class="result-value" id="customTime">--:--</div>
+                                <div class="result-label" style="margin-top: 0.5rem;">
+                                    to complete the 2000 meter row.
+                                </div>
+                            </div>
+
+                            <div class="video-section" style="text-align: center;">
+                                <a href="https://www.concept2.com/training/rowing-technique" target="_blank" class="video-toggle" style="display: inline-block; text-decoration: none;">
+                                    📹 Watch Rowing Technique Videos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step" onclick="toggleStep(5)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">5</span>
+                        <h2 class="step-title">Background Investigation</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-5">▼</span>
+                </div>
+                <div class="step-content" id="content-5">
+                    <p>At this point, the candidate will be assigned to a Background Investigator. The Personal History Statement or Background Packet that was completed earlier in the process is the primary document used for the background investigation of police applicants. Family members, references, acquaintances, past employers and co-workers are interviewed, and a review is conducted of military and school records, driving records, credit history, and any other area the investigator deems appropriate.</p>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="process-step" onclick="toggleStep(6)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">6</span>
+                        <h2 class="step-title">Review by the Chief of Police</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-6">▼</span>
+                </div>
+                <div class="step-content" id="content-6">
+                    <p>The Chief of Police will review all documentation and findings of the candidate's progress through the hiring process. The Chief will make the determination of a candidates eligibility for lateral entry if applicable. Upon a successful review by the Chief, the candidate will move forward in the process.</p>
+                </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="process-step" onclick="toggleStep(7)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">7</span>
+                        <h2 class="step-title">Conditional Offer of Employment</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-7">▼</span>
+                </div>
+                <div class="step-content" id="content-7">
+                    <p>A conditional offer of employment will be made to applicants who pass the background investigation. At this time we may ask for Birth certificate, naturalization documents, high school transcripts, diploma or GED, College/university transcripts and diplomas for all schools attended, marriage licenses, divorce decrees, peace officer license, driver's license and military discharge DD-214.</p>
+                </div>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="process-step" onclick="toggleStep(8)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">8</span>
+                        <h2 class="step-title">Psychological Exam and Interview</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-8">▼</span>
+                </div>
+                <div class="step-content" id="content-8">
+                    <p>A psychological examination is a TCOLE requirement. We use an independent psychologist for this examination.</p>
+                </div>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="process-step" onclick="toggleStep(9)">
+                <div class="step-header">
+                    <div class="step-header-left">
+                        <span class="step-number">9</span>
+                        <h2 class="step-title">Medical Exam / Drug Screen</h2>
+                    </div>
+                    <span class="expand-icon" id="icon-9">▼</span>
+                </div>
+                <div class="step-content" id="content-9">
+                    <p>A pre-employment physical is required for this position. The examination will be performed by a city selected licensed physician.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle step expansion
+        function toggleStep(stepNum) {
+            const content = document.getElementById('content-' + stepNum);
+            const icon = document.getElementById('icon-' + stepNum);
+            
+            // Don't toggle if clicking inside the calculator/form elements
+            if (event.target.tagName === 'SELECT' || 
+                event.target.tagName === 'BUTTON' || 
+                event.target.tagName === 'INPUT' ||
+                event.target.closest('.calculator-embed')) {
+                return;
+            }
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.classList.remove('open');
+            } else {
+                content.classList.add('open');
+                icon.classList.add('open');
+            }
+        }
+
+        // Populate weight dropdown (100-400 lbs in 5 lb increments)
+        const weightSelect = document.getElementById('weight');
+        for (let w = 100; w <= 400; w += 5) {
+            const option = document.createElement('option');
+            option.value = w;
+            option.textContent = w + ' lbs';
+            weightSelect.appendChild(option);
+        }
+
+        // Populate percentage dropdown (1-100)
+        const percentSelect = document.getElementById('customPercent');
+        for (let p = 1; p <= 100; p++) {
+            const option = document.createElement('option');
+            option.value = p;
+            option.textContent = p + '%';
+            percentSelect.appendChild(option);
+        }
+
+        // Calculate 60th percentile standard
+        function calculateTime() {
+            const gender = document.getElementById('gender').value;
+            const ageRange = document.getElementById('ageRange').value;
+            const weight = parseInt(document.getElementById('weight').value);
+
+            if (!gender || !ageRange || !weight) {
+                alert('Please select all fields');
+                return;
+            }
+
+            const baseTime = calculateBaseTime(gender, ageRange, weight, 60);
+            displayResult('requiredTime', baseTime, 'results');
+        }
+
+        // Calculate custom percentage
+        function calculateCustom() {
+            const gender = document.getElementById('gender').value;
+            const ageRange = document.getElementById('ageRange').value;
+            const weight = parseInt(document.getElementById('weight').value);
+            const percent = parseInt(document.getElementById('customPercent').value);
+
+            if (!gender || !ageRange || !weight) {
+                alert('Please select gender, age, and weight first');
+                return;
+            }
+
+            if (!percent) {
+                alert('Please select a percentage');
+                return;
+            }
+
+            document.getElementById('selectedPercent').textContent = percent;
+            const baseTime = calculateBaseTime(gender, ageRange, weight, percent);
+            displayResult('customTime', baseTime, 'customResults');
+        }
+
+        // Calculate base time based on inputs
+        function calculateBaseTime(gender, ageRange, weight, percentile) {
+            let baseTime;
+            
+            let ageModifier = 0;
+            if (ageRange === '20-29') ageModifier = 0;
+            else if (ageRange === '30-39') ageModifier = 10;
+            else if (ageRange === '40-49') ageModifier = 25;
+            else if (ageRange === '50-59') ageModifier = 45;
+            else if (ageRange === '60+') ageModifier = 65;
+
+            if (gender === 'male') {
+                baseTime = 465 + ((weight - 170) * 0.4) + ageModifier;
+            } else {
+                baseTime = 540 + ((weight - 140) * 0.5) + ageModifier;
+            }
+
+            const percentileDiff = 60 - percentile;
+            baseTime += percentileDiff * 1.5;
+
+            baseTime = Math.max(360, Math.min(900, baseTime));
+
+            return baseTime;
+        }
+
+        // Display formatted result
+        function displayResult(elementId, totalSeconds, containerId) {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = Math.round(totalSeconds % 60);
+            const timeDisplay = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+            document.getElementById(elementId).textContent = timeDisplay;
+            document.getElementById(containerId).style.display = 'block';
+            document.getElementById(containerId).classList.add('show');
+            document.getElementById(containerId).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Toggle video visibility
+        function toggleVideo() {
+            const container = document.getElementById('videoContainer');
+            const toggleText = document.getElementById('videoToggleText');
+            
+            if (container.classList.contains('show')) {
+                container.classList.remove('show');
+                toggleText.textContent = 'Show Concept2 Rowing Technique Video';
+            } else {
+                container.classList.add('show');
+                toggleText.textContent = 'Hide Concept2 Rowing Technique Video';
+                setTimeout(() => {
+                    container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>
